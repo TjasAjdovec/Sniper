@@ -1,0 +1,286 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: #D5EBF6;
+    margin: 0%;
+    height: 100%;
+    padding: 0%;
+}
+#container {
+    min-height: 100%;
+}
+#main {
+    overflow: auto;
+    padding-bottom: 80px;
+}
+header {
+    height: 80px;
+    background-color: #27488F;
+    letter-spacing: 1px;
+}
+h1 {
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 30px;
+    padding-top: 20px;
+    margin: 0%;
+}
+#logo {
+    width: 15%;
+    float: left;
+}
+#name {
+    width: 85%;
+    float: right;
+    text-align: left;
+}
+#logo img {
+    height: 78px;
+    margin: auto;
+    padding-top: 2px;
+    display: block;
+}
+
+#hamnav {
+    width: 100%;
+    background: #182d5a;
+}
+#hamitems {
+    display: flex;
+}
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+}
+#hamitems a:hover {
+    background-color: #203b75;
+}
+#hamnav label, #hamburger { 
+    display: none; 
+}
+
+article {
+    position: static;
+    width: 65%;
+    margin: 1%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 5px;
+    float: left;
+}
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+article h2 {
+    color: #182d5a;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+article h3 {
+    margin-top: 0px;
+    color: red;
+}
+article p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+aside {
+    text-align: center;
+    width: 28%;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    margin: 2%;
+    margin-left: 0%;
+    position: absolute;
+    right: 0px;
+    height: 520px;
+    padding-top: 10px;
+
+}
+#home_aside {
+    height: 980px;
+}
+
+footer {
+    position: relative;
+    height: 80px;
+    background-color: #27488F;
+    margin-top: -80px;
+    clear: both; 
+    text-align: center;
+    color: #548fd3;
+    font-size: small;
+}
+footer p {
+    margin: 0%;
+    padding-top: 12px;
+}
+
+#come {
+    float: left;
+    width: 35%;
+}
+#map {
+    float: right;
+    width: 60%;
+}
+
+#vizitka_logo {
+    width: 250px;
+}
+#files a {
+    text-decoration: none;
+    color: black;
+}
+#files a:hover {
+    color: #548fd3;
+}
+#files p {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+#files img {
+    height: 30px;
+}
+#urnik {
+    width: 100%;
+}
+#home_photo {
+    width: 100%;
+    align-items: center;
+    height: 150px;
+    object-fit: cover;
+}
+#video {
+    float: left;
+    width: 50%;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+#about_photo {
+    height: 200px;
+    width: auto;
+    float: right;
+    padding: 15px;
+}
+#plakat {
+    width: 300px;
+    height: auto;
+    padding-top: 20px;
+}
+.text {
+    text-align: justify;
+}
+
+@media screen and (max-width: 835px) and (min-width: 600px) {
+    h1 {
+        padding-top: 4px;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    aside {
+        display: none;
+    }
+    article {
+        width: 94%;
+        margin: 2%;
+    }
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+}
+@media screen and (max-width: 600px){
+    header {
+        height: 100px;
+    }
+    aside {
+        display: none;
+    }
+    article {
+        width: 100%;
+        margin: 0%;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        border-radius: 3px;
+    }
+    #name {
+        display: none;
+    }
+    #logo {
+        width: 100%;
+        height: 100px;
+    }
+    #logo img {
+        height: 100px;
+    }
+    .responsive {
+        width: 100%;
+      }
+    #hamitems {display: block;}
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #0d1a36;
+    }
+    #hamnav label {
+        display: inline-block;
+        color: white;
+        background-color: #0d1a36;
+        font-style: normal;
+        font-size: 25px;
+        padding: 10px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 5px;
+    }
+    #hamitems {
+        display: none;
+    }
+    #hamnav input:checked ~ #hamitems { 
+        display: block; 
+    }
+    #come {
+        width: 100%;
+    }
+    #map {
+        width: 100%;
+    }
+    #about_photo {
+        width: 100%;
+        object-fit: cover;
+    }
+    #vizitka_logo {
+        width: 100%;
+    }
+    #video {
+        width: 100%;
+    }
+}
